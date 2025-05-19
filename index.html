@@ -11,7 +11,65 @@
     <main>
       <div class="about-me-container">
         <div class="portrait-container">
-          <picture> </picture>
+          <picture>
+            <source
+              srcset="
+                ./pictures/portrait-desktop_1200w.webp 2x,
+                ./pictures/portrait-desktop_600w.webp  1x
+              "
+              type="image/webp"
+              media="(min-width: 1025px)"
+            />
+            <source
+              srcset="
+                ./pictures/portrait-desktop_1200w.jpg 2x,
+                ./pictures/portrait-desktop_600w.jpg  1x
+              "
+              type="image/jpeg"
+              media="(min-width: 1025px)"
+            />
+            <source
+              srcset="
+                ./pictures/portrait-desktop_600w.webp 2x,
+                ./pictures/portrait-desktop_300w.webp 1x
+              "
+              type="image/webp"
+              media="(min-width: 481px)"
+            />
+            <source
+              srcset="
+                ./pictures/portrait-desktop_600w.jpg 2x,
+                ./pictures/portrait-desktop_300w.jpg 1x
+              "
+              type="image/jpeg"
+              media="(min-width: 481px)"
+            />
+            <source
+              srcset="
+                ./pictures/portrait-mobile_960w.webp 2x,
+                ./pictures/portrait-mobile_480w.webp 1x
+              "
+              type="image/webp"
+              media="(max-width: 480px)"
+            />
+            <source
+              srcset="
+                ./pictures/portrait-mobile_960w.jpg 2x,
+                ./pictures/portrait-mobile_480w.jpg 1x
+              "
+              type="image/jpeg"
+              media="(max-width: 480px)"
+            />
+
+            <img
+              srcset="
+                ./pictures/portrait-mobile_600w.jpg 2x,
+                ./pictures/portrait-mobile_300w.jpg 1x
+              "
+              src="./pictures/portrait-desktop_300w.jpg"
+              alt="My name portrait"
+            />
+          </picture>
           <h1>My Name</h1>
         </div>
         <section id="about-me" aria-labelledby="about-me-title">
