@@ -35,6 +35,11 @@ h3 {
   font-family: "Playfair Display", "Times New Roman", Times, serif;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 .icon-container img {
   width: inherit;
   height: inherit;
@@ -83,6 +88,7 @@ main {
   position: absolute;
   justify-self: center;
   font-size: 6rem;
+  font-size: 6vw;
   color: black;
   font-weight: 500;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
@@ -93,16 +99,20 @@ main {
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   padding: 3rem;
+  padding: 2vw;
   display: grid;
   gap: 2rem;
+  gap: 1.5vw;
 }
 
 #about-me-title {
   font-size: 4rem;
+  font-size: 3vw;
 }
 
 #about-me p {
   font-size: 2rem;
+  font-size: 1.5vw;
   color: var(--text-color-light);
 }
 
