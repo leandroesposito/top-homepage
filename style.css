@@ -128,6 +128,57 @@ main {
   height: max(2rem, calc(2.5vw + 0.6rem));
 }
 
+#my-work {
+  display: grid;
+  gap: 2rem;
+}
+
+.projects-container {
+  display: grid;
+  row-gap: 3rem;
+  column-gap: 3vw;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+article.project {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.project-screenshot {
+  background-color: aqua;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.project-screenshot img {
+  width: 100%;
+}
+
+.project-content {
+  padding: 1.5vw 2vw;
+  background-color: var(--secondary-color);
+  display: grid;
+  gap: 1.5vw;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: max(1.2rem, calc(1vw + 0.6rem));
+}
+
+.project-header .icon-container {
+  width: calc(1.5vw + 1rem);
+  height: calc(1.5vw + 1rem);
+}
+
+.project-body {
+  font-size: max(1rem, calc(0.8vw + 0.6rem));
+  color: var(--text-color-light);
+}
+
 .icon-container {
   width: 3rem;
   height: 3rem;
