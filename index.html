@@ -424,7 +424,59 @@
           </div>
         </div>
         <div class="working-picture-container">
-          <picture></picture>
+          <picture>
+            <source
+              srcset="./pictures/working-horizontal_1200w.webp"
+              type="image/webp"
+              media="(min-width: 1025px)"
+            />
+            <source
+              srcset="./pictures/working-horizontal_1200w.jpg"
+              type="image/jpeg"
+              media="(min-width: 1025px)"
+            />
+            <source
+              srcset="
+                ./pictures/working-vertical_960w.webp 2x,
+                ./pictures/working-vertical_480w.webp 1x
+              "
+              type="image/webp"
+              media="(min-width: 481px)"
+            />
+            <source
+              srcset="
+                ./pictures/working-vertical_960w.jpg 2x,
+                ./pictures/working-vertical_480w.jpg 1x
+              "
+              type="image/jpeg"
+              media="(min-width: 481px)"
+            />
+            <source
+              srcset="
+                ./pictures/working-vertical_768w.webp   2x,
+                ./pictures/working-horizontal_480w.webp 1x
+              "
+              type="image/webp"
+              media="(max-width: 480px)"
+            />
+            <source
+              srcset="
+                ./pictures/working-vertical_768w.jpg   2x,
+                ./pictures/working-horizontal_480w.jpg 1x
+              "
+              type="image/jpeg"
+              media="(max-width: 480px)"
+            />
+
+            <img
+              srcset="
+                ./pictures/working-horizontal_768w.jpg 2x,
+                ./pictures/working-horizontal_480w.jpg 1x
+              "
+              src="./pictures/working-horizontal_480w.jpg"
+              alt="My name working"
+            />
+          </picture>
         </div>
       </section>
     </footer>
