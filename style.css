@@ -179,7 +179,45 @@ article.project {
   color: var(--text-color-light);
 }
 
-.icon-container {
-  width: 3rem;
-  height: 3rem;
+footer {
+  padding: 4vw 6vw;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+#contact-me {
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  font-size: max(1.1rem, calc(1vw + 0.6rem));
+  gap: 2rem;
+}
+
+.contact-info-item img {
+  filter: invert(100%);
+}
+
+.contact-me-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+}
+
+.contact-info-container {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.working-picture-container img {
+  width: 100%;
+}
+
+#contact-me .icon-container {
+  width: max(2rem, calc(2.5vw + 0.6rem));
+  height: max(2rem, calc(2.5vw + 0.6rem));
 }
