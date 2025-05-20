@@ -67,6 +67,7 @@ p {
 
 main {
   padding: 4vw 6vw;
+  padding: 4.5rem 6.5rem;
   display: grid;
   gap: 5rem;
 }
@@ -93,6 +94,7 @@ main {
   position: absolute;
   justify-self: center;
   font-size: calc(2.5vw + 1.5rem);
+  font-size: 5rem;
   color: black;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
   transform: translateY(-10px);
@@ -102,18 +104,21 @@ main {
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   padding: 2vw;
+  padding: 2.5rem;
   display: grid;
-  gap: 2rem;
   gap: 1.5vw;
+  gap: 2rem;
 }
 
 .section-title {
   font-size: max(2rem, calc(2.5vw + 0.6rem));
+  font-size: 3.5rem;
   font-weight: 500;
 }
 
 #about-me p {
   font-size: max(1.1rem, calc(1vw + 0.6rem));
+  font-size: 1.8rem;
   color: var(--text-color-light);
 }
 
@@ -126,6 +131,8 @@ main {
 #about-me .icon-container {
   width: max(2rem, calc(2.5vw + 0.6rem));
   height: max(2rem, calc(2.5vw + 0.6rem));
+  width: 3.5rem;
+  height: 3.5rem;
 }
 
 #my-work {
@@ -137,6 +144,7 @@ main {
   display: grid;
   row-gap: 3rem;
   column-gap: 3vw;
+  column-gap: 3.5rem;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
@@ -157,9 +165,11 @@ article.project {
 
 .project-content {
   padding: 1.5vw 2vw;
+  padding: 2rem 2.5rem;
   background-color: var(--secondary-color);
   display: grid;
   gap: 1.5vw;
+  gap: 2rem;
 }
 
 .project-header {
@@ -167,15 +177,23 @@ article.project {
   justify-content: space-between;
   align-items: center;
   font-size: max(1.2rem, calc(1vw + 0.6rem));
+  font-size: 1.8rem;
+}
+
+.project-header .icons-container {
+  gap: 1rem;
 }
 
 .project-header .icon-container {
   width: calc(1.5vw + 1rem);
   height: calc(1.5vw + 1rem);
+  width: 2.8rem;
+  height: 2.8rem;
 }
 
 .project-body {
   font-size: max(1rem, calc(0.8vw + 0.6rem));
+  font-size: 1.5rem;
   color: var(--text-color-light);
 }
 
@@ -200,6 +218,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 3vw;
+  gap: 3.5rem;
 }
 
 .contact-info-container {
@@ -213,11 +232,20 @@ footer {
   gap: 1rem;
 }
 
-.working-picture-container img {
-  width: 100%;
+#contact-me .contact-info-item .icon-container {
+  width: max(2rem, calc(2.5vw + 0.6rem));
+  height: max(2rem, calc(2.5vw + 0.6rem));
+  width: 3rem;
+  height: 3rem;
 }
 
 #contact-me .icon-container {
   width: max(2rem, calc(2.5vw + 0.6rem));
   height: max(2rem, calc(2.5vw + 0.6rem));
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.working-picture-container img {
+  width: 100%;
 }
