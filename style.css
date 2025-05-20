@@ -108,12 +108,12 @@ main {
 }
 
 .section-title {
-  font-size: calc(2.5vw + 0.6rem);
+  font-size: max(2rem, calc(2.5vw + 0.6rem));
   font-weight: 500;
 }
 
 #about-me p {
-  font-size: calc(1vw + 0.6rem);
+  font-size: max(1.1rem, calc(1vw + 0.6rem));
   color: var(--text-color-light);
 }
 
@@ -124,8 +124,8 @@ main {
 }
 
 #about-me .icon-container {
-  width: calc(2.5vw + 0.6rem);
-  height: calc(2.5vw + 0.6rem);
+  width: max(2rem, calc(2.5vw + 0.6rem));
+  height: max(2rem, calc(2.5vw + 0.6rem));
 }
 
 .icon-container {
