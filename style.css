@@ -63,7 +63,9 @@ p {
 }
 
 main {
-  padding: 5rem 7rem;
+  padding: 4vw 6vw;
+  display: grid;
+  gap: 5rem;
 }
 
 .about-me-container {
@@ -87,8 +89,7 @@ main {
 .portrait-container h1 {
   position: absolute;
   justify-self: center;
-  font-size: 6rem;
-  font-size: 6vw;
+  font-size: calc(2.5vw + 1.5rem);
   color: black;
   font-weight: 500;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
@@ -98,21 +99,19 @@ main {
 #about-me {
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  padding: 3rem;
   padding: 2vw;
   display: grid;
   gap: 2rem;
   gap: 1.5vw;
 }
 
-#about-me-title {
-  font-size: 4rem;
-  font-size: 3vw;
+.section-title {
+  font-size: calc(2.5vw + 0.6rem);
+  font-weight: 500;
 }
 
 #about-me p {
-  font-size: 2rem;
-  font-size: 1.5vw;
+  font-size: calc(1vw + 0.6rem);
   color: var(--text-color-light);
 }
 
@@ -123,8 +122,8 @@ main {
 }
 
 #about-me .icon-container > a {
-  width: 3rem;
-  height: 3rem;
+  width: calc(2.5vw + 0.6rem);
+  height: calc(2.5vw + 0.6rem);
 }
 
 .icon-container > a {
