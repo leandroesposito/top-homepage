@@ -1,3 +1,10 @@
+:root {
+  --primary-color: rgb(8, 145, 178);
+  --secondary-color: rgb(255, 255, 255);
+  --text-color: black;
+  --text-color-light: rgb(117, 117, 117);
+}
+
 @font-face {
   font-family: Roboto;
   src: url("fonts/Roboto-Regular.woff2") format("woff2"),
@@ -28,6 +35,11 @@ h3 {
   font-family: "Playfair Display", "Times New Roman", Times, serif;
 }
 
+.icon-container img {
+  width: inherit;
+  height: inherit;
+}
+
 .background {
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.4));
   position: absolute;
@@ -39,32 +51,73 @@ h3 {
 .background::before {
   width: 100%;
   height: 100%;
-  background-color: rgb(0, 141, 151);
+  background-color: var(--primary-color);
   clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
   position: absolute;
   content: "";
 }
 
 main {
-  padding: 8rem 6rem;
+  padding: 5rem 7rem;
 }
 
 .about-me-container {
   display: grid;
-  grid-template-columns: 2fr 3fr;
-  background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-}
-.icon-container > a {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
+  grid-template-columns: 4fr 5fr;
   align-items: center;
-  justify-content: center;
 }
 
-img {
-  width: inherit;
-  height: inherit;
+.portrait-container {
+  position: relative;
+  display: grid;
+  align-items: end;
+}
+
+.portrait-container img {
+  object-fit: contain;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.portrait-container h1 {
+  position: absolute;
+  justify-self: center;
+  font-size: 6rem;
+  color: black;
+  font-weight: 500;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  transform: translateY(-10px);
+}
+
+#about-me {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  padding: 3rem;
+  display: grid;
+  gap: 2rem;
+}
+
+#about-me-title {
+  font-size: 4rem;
+}
+
+#about-me p {
+  font-size: 2rem;
+  color: var(--text-color-light);
+}
+
+.icons-container {
+  display: flex;
+  gap: 1rem;
+  justify-self: end;
+}
+
+#about-me .icon-container > a {
+  width: 3rem;
+  height: 3rem;
+}
+
+.icon-container > a {
+  width: 3rem;
+  height: 3rem;
 }
