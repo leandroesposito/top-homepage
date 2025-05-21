@@ -250,6 +250,14 @@ footer {
   height: 4.5rem;
 }
 
+#contact-me .photo-credit {
+  font-size: 2rem;
+}
+
+#contact-me a {
+  color: var(--secondary-color);
+}
+
 .working-picture-container img {
   width: 100%;
 }
