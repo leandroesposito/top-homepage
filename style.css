@@ -156,14 +156,25 @@ article.project {
 }
 
 .project-screenshot {
-  background-color: aqua;
+  background-color: var(--primary-color);
   width: 100%;
   height: 250px;
   overflow: hidden;
 }
 
+.project-screenshot::after {
+  content: "Project screenshot";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 2rem;
+  color: var(--secondary-color);
+}
+
 .project-screenshot img {
   width: 100%;
+  display: none;
 }
 
 .project-content {
