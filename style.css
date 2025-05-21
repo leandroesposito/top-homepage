@@ -128,7 +128,10 @@ main {
 .icons-container {
   display: flex;
   gap: 3rem;
-  justify-self: end;
+}
+
+#about-me .icons-container {
+  justify-content: end;
 }
 
 #about-me .icon-container {
